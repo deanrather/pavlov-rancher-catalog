@@ -1,0 +1,8 @@
+pavlov-vr:
+  image: deanrather/docker-pavlov-vr-server
+  user: steam
+  ports:
+    - "${PORT}:${PORT}/udp"
+  volumes:
+    - ./Game.ini:/home/steam/pavlovserver/Pavlov/Saved/Config/LinuxServer/Game.ini
+  command: /home/steam/pavlovserver/PavlovServer.sh -PORT=${PORT} -VERBOSE

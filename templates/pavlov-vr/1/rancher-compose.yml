@@ -1,0 +1,11 @@
+.catalog:
+  name: "Pavlov-VR"
+  version: "v1"
+  description: "Dedicated Pavlov-VR Community Server"
+  uuid: pavlov-vr-1
+  questions:
+    - variable: "PORT"
+      label: "Which port?"
+      description: "must be unique among all servers running on the box. must be whitelisted in the provider's rules"
+      type: "int"
+      dfault: 7777
